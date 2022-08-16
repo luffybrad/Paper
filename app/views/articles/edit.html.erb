@@ -1,0 +1,8 @@
+<%= content_for :page_title, "Edit Article" %>
+<%= render "form", article: @article %>
+
+<br>
+
+<div>
+  <%= link_to "Back to articles", articles_path, class: "btn btn-secondary" %>
+</div>

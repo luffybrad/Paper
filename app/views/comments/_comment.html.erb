@@ -1,0 +1,10 @@
+
+<div class="card ">
+  <div class="card-body">
+    <p class="card-text"><b><%= comment.commenter%>:</b> <%= comment.body%></p>
+    <%= link_to "Delete", [comment.article, comment] ,data:{
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"},
+        class: "btn btn-danger" %>
+  </div>
+</div>
